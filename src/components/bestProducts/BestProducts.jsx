@@ -45,6 +45,14 @@ function BestProducts() {
         settings: {
           slidesToShow: 2,
         },
+        
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+        
       },
     ],
   };

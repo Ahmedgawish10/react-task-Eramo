@@ -4,7 +4,6 @@ import './App.css'
 import MainHeader from './components/header/MainHeader';
 import Hero from './components/hero/Hero';
 import BestProducts from './components/bestProducts/BestProducts';
-// import Loading from './components/loading/Loading';
 import Loading from './components/loding/Loading';
 
 function App() {

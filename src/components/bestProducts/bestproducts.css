@@ -93,7 +93,15 @@
 }
 /* media */
 /* media for md 550 and more */
-@media screen and (max-width:550px) {
+@media screen and (max-width:650px) {
+  .slick-next{
+    display: none !important;
+
+  }
+  .slick-prev{
+    display: none !important;
+
+  }
   .slick-next::before{
     display: none !important;
 
