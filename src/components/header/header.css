@@ -1,0 +1,229 @@
+.custom-select {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.custom-select.active .select-dropdown {
+  display: block;
+}
+
+.select-button {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 3px #c8d0d8;
+  border-radius: 4px;
+  width: 100%;
+  z-index: 1;
+  margin-top: 5px;
+  padding: 10px 0;
+  list-style-type: none;
+}
+
+.select-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select-dropdown li:hover {
+  background-color: #f0f4f8;
+}
+
+.arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+/* search */
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  padding-right: 40px;
+  color: #181515;
+}
+.input-search::placeholder {
+  color: rgba(13, 1, 1, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: white;
+  background-color: rgb(32, 40, 32);
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search {
+  border: 1px solid red;
+  width: 160px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:focus {
+  border: 1px solid red;
+  width: 160px;
+  border-radius: 15px;
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+/* media for screens lg */
+@media screen and (min-width: 900px) and (max-width: 1160px) {
+  .header ul {
+    gap: 0.5rem !important;
+  }
+  .header .vendor-button {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
+  }
+  /* main-header-style */
+  .main-header header > div {
+    gap: 0.4rem;
+  }
+  .main-header ul a {
+    font-size: 16px !important;
+  }
+  .main-header .nav-box .right > div {
+    gap: 0.4rem;
+  }
+}
+/* media for xxlg 1300px and more */
+@media screen and (min-width: 1300px) {
+  .btn-search:focus ~ .input-search {
+    width: 300px;
+  }
+  .input-search:focus {
+    width: 300px;
+  }
+}
+/* media for md 992px and less */
+@media screen and (min-width: 992px) {
+  .main-header .overlay {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+/* media for md 992px and less */
+@media screen and (max-width: 992px) {
+    .header {
+        display: none;
+      }
+      .main-header .nav-box .count{
+        left: 3px !important;
+        top: -18px;
+
+      }
+  .main-header .overlay.show {
+    display: block !important;
+    left: 0% !important;
+    transition: 0.6s ease-in-out;
+  }
+  .main-header .overlay.hide {
+    left: -100% !important;
+    transition: 0.6s ease-in-out;
+  }
+  .main-header .main-logo {
+    display: block;
+  }
+  .main-header select {
+    display: none;
+  }
+  .main-header .nav-box {
+    display: flex;
+    justify-content: flex-end !important;
+  }
+  .main-header .nav-content {
+    height: 100vh;
+    top: 82px;
+    width: 100%;
+    position: absolute;
+    left: -100% !important;
+    transition: 0.6s ease-in-out;
+    background-color: #00000045;
+  }
+  .main-header .nav-content.show{
+    left: 0% !important;
+    transition: 0.6s ease-in-out;
+    display: block;
+  }
+  .main-header .nav-content.hide{
+    left: -110% !important;
+    display: block;
+    transition: 0.6s ease-in-out;
+  }
+  .main-header .nav-content .right {
+    padding-top: 10px;
+    justify-content: flex-start;
+  }
+  .main-header .nav-content .right span {
+    margin: 10px;
+  }
+  .main-header .nav-content ul {
+    display: block;
+  }
+  .main-header .nav-content ul li {
+    display: block;
+    padding: 10px;
+  }
+  .main-header .nav-content ul li .home{
+     color: red;
+  }
+  .main-header .nav-content ul li a{
+    color: white;
+    transition: 0.2s;
+
+  }
+  .main-header .nav-content ul li a:hover{
+    transition: 0.5s;
+    color: rgb(185, 126, 17);
+    padding-left: 10px;
+  }
+  .menu-icon {
+    display: block !important;
+  }
+}
+/* media for md 768 and more */
+@media screen and (min-width: 600px) and (max-width:992px) {
+.nav-content{
+  width: 60% !important;
+}
+ 
+}
+
+
+
+

@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* global styles for project  */
+/* discount-percentage */
+.discount-percentage{
+  background-color: #FFC436;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px 10px;
+
+}
+/* discount style  */
+.price-original::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  bottom: 0;
+  width: 100%; /* Width of the line */
+  height: 2px;
+  background-color: #ef4444; /* Red line color */
+}
+/* 2 */
