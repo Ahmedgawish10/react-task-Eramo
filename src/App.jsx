@@ -5,6 +5,7 @@ import MainHeader from './components/header/MainHeader';
 import Hero from './components/hero/Hero';
 import BestProducts from './components/bestProducts/BestProducts';
 import Loading from './components/loding/Loading';
+import Footer from './components/footer/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,10 +25,11 @@ function App() {
         </div>
       ) : (
         <>
-           <Header />
+         <Header />
         <MainHeader/>
         <Hero/>
         <BestProducts/>
+        <Footer/>
         </>
       )}
     </div>
