@@ -7,6 +7,7 @@ import { MdOutlineFacebook } from "react-icons/md";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaSquareTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
+import { FaFacebookF } from "react-icons/fa";
 
 import "./footer.css"
 function Footer() {
@@ -61,10 +62,13 @@ function Footer() {
                                    </li>
                                    <li>
                                         <span className='flex gap-2'>
-                                            <a href="#" className="text-white transition hover:opacity-75"> <MdOutlineFacebook className='text-2xl text-[#1f1fff]' />     </a>
-                                            <a href="#" className="text-white transition hover:opacity-75"> <FaSquareInstagram className='text-2xl text-[#405DE6]' />   </a>
-                                            <a href="#" className="text-white transition hover:opacity-75"> <FaSquareTwitter className='text-2xl text-[#386aff]' />   </a>
-                                            <a href="#" className="text-white transition hover:opacity-75"> <IoLogoYoutube className='text-2xl text-[#ff2424] ' />   </a>
+                                            <a href="#" className="text-white transition hover:opacity-75 boder rounded-full w-8 h-8  p-1 bg-[#216bff] text-center"> <FaFacebookF className='text-2xl  text-[#ffffff]' />     </a>
+                                            <a href="#" className="text-white transition hover:opacity-75 boder rounded-full w-8 h-8  p-1  text-center"> <FaSquareInstagram className='text-3xl  text-[#7935e8] mt-[-3px]' />     </a>
+                                            <a href="#" className="text-white transition hover:opacity-75 boder rounded-full w-8 h-8  p-1  text-center"> <FaSquareTwitter className='text-3xl  text-[#6c11ff] mt-[-3px]' />     </a>
+                                            <a href="#" className="text-white transition hover:opacity-75 boder rounded-full w-8 h-8  p-1  text-center"> <IoLogoYoutube className='text-3xl  text-[#ff3333] mt-[-3px]' />     </a>
+
+                                           
+                                           
 
                                         </span>
                                     </li>
