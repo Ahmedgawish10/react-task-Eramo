@@ -111,3 +111,32 @@
   }
    
 }
+/* media for md screens and less */
+@media screen and (max-width:768px) {
+  .best-Products nav{
+    display: block ;
+    position: absolute;
+    background-color: #aeffaeb4;
+    left: 0;
+    bottom: -170px;
+    left: -206px;
+    width: 240px;
+    z-index: 20;
+    display: none ;
+  }
+  .show1{
+    display: block !important;
+  }
+  .best-Products nav ul{
+    display: block !important;
+  }
+  .best-Products nav ul li{
+    padding-bottom: 12px;
+  }
+  .best-Products nav ul li a{
+    padding-bottom: initial !important;
+      color: black !important;
+
+  }
+
+}

@@ -20,7 +20,7 @@ function Hero() {
                         <div className="box1-left flex items-center ">
                             <div className="center text-center sm:text-center md:text-left">
                                 <div className="title text-[25px] font-semibold">Enjoy</div>
-                                <div className="product-title text-[30px] sm:text-[46px] text-[#E30613] font-semibold ">PRODUCT NAME</div>
+                                <div className="product-title text-[30px] sm:text-[46px] text-[#E30613] font-semibold ">Rehana</div>
                                 <div className="product-desc w-[75%] text-[18px] pb-[2rem]">
                                     A wonderful and unique collection
                                     of home and office furniture pieces
@@ -51,7 +51,7 @@ function Hero() {
                     {/* box2 */}
                     <div className="box2 px-[3rem] py-10 rounded-lg animated-element3 animate3  text-center sm:text-center md:text-left lg:text-left">
                         <div className="box2-container ">
-                            <div className="product-title text-[24px] text-[#E30613] font-semibold md:w-[200px] ">PRODUCT NAME</div>
+                            <div className="product-title text-[24px] text-[#E30613] font-semibold md:w-[200px] ">ABRIL</div>
                             <div className="product-desc text-[18px] pb-[1rem] ">
                                 A wonderful and unique
                                 of home and office furniture

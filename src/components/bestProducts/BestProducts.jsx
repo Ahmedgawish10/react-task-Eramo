@@ -19,8 +19,8 @@ function BestProducts() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1500,
@@ -57,12 +57,17 @@ function BestProducts() {
     ],
   };
 
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+
+  const [selectedItem, setSelectedItem] = useState(null);
   const handleItemClick = (index) => {
     setSelectedItem(index === selectedItem ? null : index);
   };
-
   const products = [
     {
       image: ImgBest1,
@@ -110,8 +115,8 @@ function BestProducts() {
                 </a>
               </div>
 
-              <div className="md:flex md:items-center">
-                <nav aria-label="Global" className="hidden md:block">
+              <div className="md:flex md:items-center relative">
+                <nav aria-label="Global" className={`hidden md:block ${isMenuOpen ? 'show1' : 'hide'} `}>
                   <ul className="flex items-center gap-6 text-sm justify-end">
                     <li>
                       <a
@@ -176,8 +181,8 @@ function BestProducts() {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                  <div className="block md:hidden">
-                    <button className="rounded bg-orange-400 p-2 text-blue-600 transition hover:text-gray-600/75">
+                  <div className="block md:hidden" onClick={toggleMenu}>
+                    <button className="rounded  p-2 text-gray-600 transition hover:text-gray-600/75">
                     <MdOutlineMenuOpen className='text-2xl'/>
 
                     </button>

@@ -89,21 +89,20 @@ function MainHeader() {
 
                 <div className="right flex items-center justify-end gap-4  flex-1">
                   <div className=" flex sm:gap-4">
-                    <span className="border-r pe-2 cursor-pointer">
-                      <GoBell className="text-2xl text-[#E30613]" />
-                    </span>
                     <span className="border-r pe-2 cursor-pointer relative">
                     <span className="bg-[#3771C8] w-5 h-5 rounded-full  absolute top-[-12px] right-0 text-center text-white text-sm count">2</span>
 
-                      <IoCartOutline className="text-2xl text-[#E30613]" />
+                      <GoBell className="text-2xl text-[#E30613]" />
                     </span>
                     <span className="border-r pe-2 cursor-pointer relative">
                       <span className="bg-[#3771C8] w-5 h-5 rounded-full  absolute top-[-12px] right-0 text-center text-white text-sm count">4</span>
+                      <IoCartOutline className="text-2xl text-[#E30613]" />
+                    </span>
+                    <span className="border-r pe-2 cursor-pointer relative">
+                      <span className="bg-[#3771C8] w-5 h-5 rounded-full  absolute top-[-12px] right-0 text-center text-white text-sm count">6</span>
                       <TfiShareAlt className="text-2xl text-[#E30613]" />
                     </span>
                     <span className="border-r pe-2 cursor-pointer relative">
-                    <span className="bg-[#3771C8] w-5 h-5 rounded-full  absolute top-[-12px] right-0 text-center text-white text-sm count">6</span>
-
                       <BsPerson className="text-2xl text-[#E30613]" />
                     </span>
                     <div className="cursor-pointer flex  items-center">
